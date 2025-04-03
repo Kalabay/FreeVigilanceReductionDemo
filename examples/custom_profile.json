@@ -1,0 +1,80 @@
+{
+    "profiles": [
+        {
+            "profile_id": "custom_profile",
+            "entity_types": [
+                "PER",
+                "LOC",
+                "ORG",
+                "PHONE",
+                "EMAIL",
+                "PASSPORT",
+                "INN",
+                "SNILS",
+                "MEDICAL_ID",
+                "PATIENT_CODE"
+            ],
+            "replacement_rules": {
+                "PER": {
+                    "method": "mask",
+                    "placeholder": "[PER]"
+                },
+                "LOC": {
+                    "method": "mask",
+                    "placeholder": "[LOC]"
+                },
+                "ORG": {
+                    "method": "mask",
+                    "placeholder": "[ORG]"
+                },
+                "PHONE": {
+                    "method": "mask",
+                    "placeholder": "[PHONE]"
+                },
+                "EMAIL": {
+                    "method": "mask",
+                    "placeholder": "[EMAIL]"
+                },
+                "PASSPORT": {
+                    "method": "mask",
+                    "placeholder": "[PASSPORT]"
+                },
+                "INN": {
+                    "method": "mask",
+                    "placeholder": "[INN]"
+                },
+                "SNILS": {
+                    "method": "mask",
+                    "placeholder": "[SNILS]"
+                },
+                "MEDICAL_ID": {
+                    "method": "mask",
+                    "placeholder": "[MEDICAL_ID]"
+                },
+                "PATIENT_CODE": {
+                    "method": "mask",
+                    "placeholder": "[PATIENT_CODE]"
+                }
+            },
+            "dictionary_settings": {
+                "cities": {
+                    "enabled": true,
+                    "path": "/Users/mikekalabay/Documents/free_vigilance_reduction/examples/dictionaries/russian_cities.txt"
+                }
+            },
+            "custom_entity_prompts": {
+                "PER": "PER - имена, фамилии и отчества людей",
+                "LOC": "LOC - адреса, географические названия и местоположения",
+                "ORG": "ORG - названия организаций, компаний и учреждений",
+                "PHONE": "PHONE - номера телефонов в любом формате",
+                "EMAIL": "EMAIL - электронные почтовые адреса",
+                "PASSPORT": "PASSPORT - номера паспортов и другие идентификационные документы",
+                "INN": "INN - индивидуальные номера налогоплательщиков",
+                "SNILS": "SNILS - номера страховых свидетельств (СНИЛС)",
+                "MEDICAL_ID": "MEDICAL_ID - номера медицинских карт и идентификаторы",
+                "PATIENT_CODE": "PATIENT_CODE - коды пациентов в формате 'Пациент-XXXX'"
+            }
+        }
+    ],
+    "default_profile_id": "custom_profile"
+}

@@ -1,0 +1,90 @@
+{
+    "summary": {
+        "original_length": 416,
+        "reduced_length": 330,
+        "entities_found": 5,
+        "replacements_made": 5
+    },
+    "entities": [
+        {
+            "text": "Медицинская карта №12345-МК",
+            "entity_type": "ORG",
+            "start_pos": 5,
+            "end_pos": 32
+        },
+        {
+            "text": "Иванов Иван Иванович",
+            "entity_type": "PER",
+            "start_pos": 46,
+            "end_pos": 66
+        },
+        {
+            "text": "г. Москва, ул. Пушкина, д. 10, кв. 5",
+            "entity_type": "LOC",
+            "start_pos": 108,
+            "end_pos": 144
+        },
+        {
+            "text": "+7 (123) 456-78-90",
+            "entity_type": "PHONE",
+            "start_pos": 158,
+            "end_pos": 176
+        },
+        {
+            "text": "Пациент-A123",
+            "entity_type": "PER",
+            "start_pos": 195,
+            "end_pos": 207
+        }
+    ],
+    "replacements": {
+        "PER": [
+            {
+                "original": "Пациент-A123",
+                "replacement": "[PER]",
+                "position": [
+                    195,
+                    207
+                ]
+            },
+            {
+                "original": "Иванов Иван Иванович",
+                "replacement": "[PER]",
+                "position": [
+                    46,
+                    66
+                ]
+            }
+        ],
+        "PHONE": [
+            {
+                "original": "+7 (123) 456-78-90",
+                "replacement": "[PHONE]",
+                "position": [
+                    158,
+                    176
+                ]
+            }
+        ],
+        "LOC": [
+            {
+                "original": "г. Москва, ул. Пушкина, д. 10, кв. 5",
+                "replacement": "[LOC]",
+                "position": [
+                    108,
+                    144
+                ]
+            }
+        ],
+        "ORG": [
+            {
+                "original": "Медицинская карта №12345-МК",
+                "replacement": "[ORG]",
+                "position": [
+                    5,
+                    32
+                ]
+            }
+        ]
+    }
+}
